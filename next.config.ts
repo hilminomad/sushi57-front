@@ -1,7 +1,12 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  /* config options here */
-};
+  images: {
+    domains: ['localhost'], // For local development
+    // If you have a production domain for Strapi, add it too:
+    // domains: ['localhost', 'your-production-strapi-domain.com'],
+  },
+  // Other Next.js config options can go here
+}
 
-export default nextConfig;
+export default nextConfig
