@@ -26,18 +26,16 @@ export const Footer = () => {
           <Link href='/blog'>
             <Instagram/>
           </Link>
-          <Link href='/blog'>
-            <Linkedin/>
-          </Link>
         </div>
         </div>
         <div className="flex md:text-end text-center  flex-col">
           <p className="text-slate-200 font-light transition-all hover:text-white">07 19 00 02 61</p>
-          <p className="text-slate-200 font-light transition-all hover:text-white">sushi57@gmail.com</p>
-          <p className="text-slate-200 font-light transition-all hover:text-white">4 Lotissement El Hamra, Khouribga</p>
+          <p className="text-slate-200 font-light transition-all hover:text-white">info@sushi57.ma</p>
+          <p className="text-slate-200 font-light transition-all hover:text-white">N'49 LOT ENNAKHIL RDC
+KHOURIBGA 25000</p>
         </div>
       </div>
-      <div className="w-full text-slate-300 bg-slate-900">
+      <div className="w-full text-slate-300 bg-black-primary">
         <div className="w-full flex justify-center border-t-2 border-slate-300 py-4">
           <p className="xs">SUSHI57 &copy; 2025</p>
         </div>

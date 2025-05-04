@@ -1,9 +1,10 @@
 import Image from "next/image";
-import { Hero } from "./_components/hero";
+
 import {ContactPage} from "./_components/localisation";
 import Restaurant from "./_components/restaurant";
-import { Menu } from "./_components/menu";
+import { Menu } from "./_components/menu-local";
 import TrippyScroll from "@/components/ui/trippy-section";
+import { Hero } from "./_components/hero-local";
 
 
 

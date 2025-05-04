@@ -55,7 +55,7 @@ export const MobileSidebar = () => {
                 LOCALISATION
               </button>
             </div>
-            <a className='p-6' href="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2F212719300261%3Ffbclid%3DPAZXh0bgNhZW0CMTEAAadexxJiOfPc-CPQowJ2GlgEheyx669IFkinAOD6snzGSaNlTXFYXb91i-oy0A_aem_-mAdS9Ph9pUjm3o86m1Ibw&e=AT3fAIb9ewNEmAMKzeCgxvgagwKepfBEOERy39Dt2jGlwzDbX2yjJILabe678LYQ0Rtszips9jhBc1kB-ADveBg8TwXucxrKA9YXhQ">
+            <a className='p-6' href="https://wa.me/212719300261">
             <DottedButton label="Nous-contacter" />
             </a>
             <div className="flex text-center flex-col gap-2">
