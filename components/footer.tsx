@@ -39,7 +39,7 @@ export const Footer = () => {
         </div>
         </div>
         <div className="flex md:text-end text-center  flex-col">
-          <p className="text-slate-200 font-light transition-all hover:text-white">07 19 00 02 61</p>
+          <p className="text-slate-200 font-light transition-all hover:text-white">06 35 34 73 34</p>
           <p className="text-slate-200 font-light transition-all hover:text-white">info@sushi57.ma</p>
           <p className="text-slate-200 font-light transition-all hover:text-white">N'49 LOT ENNAKHIL RDC
 KHOURIBGA 25000</p>
