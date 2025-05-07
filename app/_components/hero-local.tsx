@@ -139,7 +139,7 @@ export function Hero({ id }: { id?: string }) {
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.6, duration: 0.5 }}
                 >
-                  <a href="https://wa.me/212719300261">
+                  <a href="https://wa.me/212635347334">
                     <DottedButton label="Passez VOTRE COMMANDE" />
                   </a>
                 </motion.div>

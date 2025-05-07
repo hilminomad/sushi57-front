@@ -55,7 +55,7 @@ export const MobileSidebar = () => {
                 LOCALISATION
               </button>
             </div>
-            <a className='p-6' href="https://wa.me/212719300261">
+            <a className='p-6' href="https://wa.me/212635347334">
             <DottedButton label="Nous-contacter" />
             </a>
             <div className="flex text-center flex-col gap-2">

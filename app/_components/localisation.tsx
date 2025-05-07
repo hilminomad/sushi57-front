@@ -17,12 +17,12 @@ export function ContactPage({ id }: { id?: string })  {
       <div className="py-16 w-full px-4 flex gap-6 md:flex-row flex-col justify-between items-center ">
         <div className='md:w-1/2 w-full'>
           <h2 className="md:text-4xl text-2xl font-bold mb-6 ">Retrouvez-Nous au Cœur de Khouribga</h2>
-          <a href="https://wa.me/212719300261">
+          <a href="https://wa.me/212635347334">
             <DottedButton label="Réserver" />
           </a>
         </div>
         <div className="relative md:w-1/2 w-full min-h-96  ">
-        <a href="https://maps.app.goo.gl/bYnje6nNjYvyi8cK6" className='cursor-pointer rounded-2xl'>
+        <a href="https://maps.app.goo.gl/bYnje6nNjYvyi8cK6" className='cursor-pointer rounded-4xl'>
             <Image src='/map.png' style={{ objectFit: 'cover',objectPosition: 'left top' }}
   quality={100}
   priority fill alt='map'></Image>

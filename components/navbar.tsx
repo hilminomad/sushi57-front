@@ -24,7 +24,7 @@ export const Navbar = () => {
         </ScrollLink>
       </div>
       <div className="md:flex hidden">
-        <a href="https://wa.me/212719300261">
+        <a href="https://wa.me/212635347334">
         <DottedButton label="Nous-contacter" />
         </a>
         
