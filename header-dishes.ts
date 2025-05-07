@@ -36,7 +36,7 @@ export const headerDishesData: Dish[] = [
   {
     id: 2,
     name: "Assortissement California",
-    price: 50,
+    price: 129,
     ingredients: "saumon frais, wakami, ananas, radis rouge, surimi",
     header_dish: true,
     image: {

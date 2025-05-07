@@ -47,22 +47,22 @@ export function Menu({ id }: { id?: string }) {
           {/* Categories */}
           <div className="w-full md:w-1/4">
             <div className="">
-              <div className="space-y-2 flex md:flex-col md:overflow-hidden overflow-scroll py-2">
+              <div className="space-y-2 flex md:flex-col md:overflow-hidden overflow-scroll  py-2">
                 {categories.map((category) => (
                   <motion.button
                     key={category.id}
                     whileTap={{ scale: 0.98 }}
                     onClick={() => setSelectedCategory(category)}
                     className={`
-                      md:w-full uppercase text-left px-4 md:py-3 py-0 rounded-lg transition-colors text-lg
+                      md:w-full uppercase text-left px-4 hover:scale-110 cursor-pointer py-0 rounded-lg transition-all text-lg
                       whitespace-nowrap
                       ${selectedCategory?.id === category.id
-                        ? "bg-primary text-black-primary"
+                        ? "bg-primary text-black-primary md:py-2"
                         : "bg-black-primary text-white-secondary hover:bg-black-secondary"
                       }
                     `}
                   >
-                    {category.name}
+                    - {category.name}
                   </motion.button>
                 ))}
               </div>
@@ -70,7 +70,8 @@ export function Menu({ id }: { id?: string }) {
           </div>
 
           {/* Dishes */}
-          <div className="w-full md:w-3/4">
+          <div className="w-full relative md:w-3/4">
+            <div className="w-full sticky top-0">
             {selectedCategory ? (
               <>
                 <h3 className="text-3xl font-bold text-primary-light mb-6 uppercase">- {selectedCategory.name} {selectedCategory.notes}</h3>
@@ -83,25 +84,25 @@ export function Menu({ id }: { id?: string }) {
                       className="overflow-hidden mb-8"
                     >
                       <div className="flex gap-4">
-                        <div className="w-full rounded-4xl md:w-1/3 h-32 relative">
+                        {dish.image.url &&<div className="w-full rounded-4xl md:w-1/3 h-32 max-w-32 relative">
                           {/* Image with loader and lazy loading */}
-                          <div className={`absolute inset-0 bg-gray-700 rounded-2xl transition-opacity duration-300 ${loadedImages[dish.id] ? 'opacity-0' : 'opacity-100'}`}>
+                           <div className={`absolute inset-0 bg-gray-700 rounded-2xl transition-opacity duration-300 ${loadedImages[dish.id] ? 'opacity-0' : 'opacity-100'}`}>
                             <div className="absolute inset-0 flex items-center justify-center">
                               <div className="animate-pulse flex space-x-4">
                                 <div className="rounded-full bg-gray-600 h-4 w-4"></div>
                               </div>
                             </div>
                           </div>
-                          {dish.image.url && <Image
+                          <Image
                             src={dish.image.url }
                             alt={dish.image.name || dish.name}
                             fill
                             loading="lazy"
                             className="object-cover rounded-2xl"
                             onLoadingComplete={() => handleImageLoad(dish.id)}
-                          />}
+                          />
                           
-                        </div>
+                        </div>}
                         <div className="w-full flex flex-col justify-between md:w-2/3">
                           <div className="">
                             <h4 className="text-xl font-bold text-white-primary uppercase">{dish.name}</h4>
@@ -119,6 +120,7 @@ export function Menu({ id }: { id?: string }) {
                 <p className="text-gray-500">Sélectionnez une catégorie pour voir les plats</p>
               </div>
             )}
+            </div>
           </div>
         </div>
       </div>

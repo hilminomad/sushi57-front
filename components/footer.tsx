@@ -1,6 +1,7 @@
 "use client"
 
 import { Facebook, Instagram, Linkedin } from "lucide-react"
+import { motion } from 'framer-motion';
 import Image from "next/image"
 import Link from "next/link"
 
@@ -11,19 +12,28 @@ export const Footer = () => {
     
     <div className="w-full relative z-[100] bg-black-primary pt-8  ">
       <div className="w-full relative z-100 text-slate-300 p-4  grid md:grid-cols-3 grid-col-1 gap-4">
-      <div className=" h-full w-full flex gap-2 items-center justify-center">
-          <Link href='/'>
-            <Image height={50} width={120} alt='Footer logo' src='/logo.png' />
-          </Link>
-        </div>
+      <div className="h-full w-full flex gap-2 items-center justify-center">
+      <Link href='/'>
+        <motion.div
+          animate={{ rotate: 360 }} // Rotate 360 degrees
+          transition={{ 
+            duration: 10, // Normal rotation speed (10 seconds for full rotation)
+            ease: "linear", // Linear animation for smooth rotation
+            repeat: Infinity, // Infinite rotation
+          }}
+          whileHover={{
+            transition: { duration: 3 } // Faster rotation on hover (3 seconds for full rotation)
+          }}
+        >
+          <Image height={50} width={120} alt='Footer logo' src='/logo.png' />
+        </motion.div>
+      </Link>
+    </div>
         
         <div className="flex text-center   flex-col gap-2">
-          <p className="text-white font-medium">Suivez-nous sur les réseaux sociaux</p>
+          <p className="text-white font-medium">Suivez-nous sur Instagram</p>
           <div className="p-3 w-full flex justify-center items-center gap-4">
-          <Link href='/blog'>
-            <Facebook/>
-          </Link>
-          <Link href='/blog'>
+          <Link href='https://www.instagram.com/su57hii/'>
             <Instagram/>
           </Link>
         </div>

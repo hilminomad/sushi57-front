@@ -84,7 +84,7 @@ export function Hero({ id }: { id?: string }) {
             }}
           >
             <Image
-              src="/sushi-loading.png" // Replace with your loading image
+              src="/sushiicon.png" // Replace with your loading image
               width={100}
               height={100}
               alt="Loading..."
@@ -120,7 +120,7 @@ export function Hero({ id }: { id?: string }) {
         >
           <BackgroundGradientAnimation>
             <motion.div 
-              className="flex md:flex-row flex-col h-screen gap-4 p-4 items-center justify-around relative z-10"
+              className="flex md:flex-row flex-col h-screen md:gap-4 gap-8 p-4 items-center md:justify-around justify-center relative z-10"
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.2, duration: 0.5 }}
@@ -145,9 +145,9 @@ export function Hero({ id }: { id?: string }) {
                 </motion.div>
               </div>
               
-              <div className="w-1/2 flex flex-col items-center justify-center">
+              <div className="w-1/2 flex flex-col items-center md:justify-center">
                 {selectedDish && (
-                  <div className="relative h-[380px] w-[380px]">
+                  <div className="relative h-[280px] w-[380px]">
                     <AnimatePresence mode="wait">
                       <motion.div
                         key={selectedDish.id}
@@ -175,7 +175,7 @@ export function Hero({ id }: { id?: string }) {
                         <Image
                           src={selectedDish.image}
                           width={320}
-                          height={320}
+                          height={260}
                           alt={selectedDish.alt}
                           className="object-cover"
                           priority

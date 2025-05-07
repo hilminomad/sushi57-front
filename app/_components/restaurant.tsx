@@ -15,7 +15,7 @@ export default function Restaurant() {
   const x = useTransform(scrollYProgress, [0, 1], ["100%", "-100%"]);
   const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [0,1, 1]);
   const textShadow = useTransform(scrollYProgress, 
-    [0, 0.5, 1], 
+    [0.1, 0.1, 0.1], 
     [
       "0 0 0px rgba(0,0,0,0)", 
       "0 0 10px rgba(0,0,0,0.5)", 
@@ -26,7 +26,7 @@ export default function Restaurant() {
   return (
     <section 
       ref={sectionRef}
-      className="relative h-screen w-full overflow-hidden"
+      className="relative h-screen w-full overflow-hidden "
     >
       {/* Fixed Background Image */}
       <div className="fixed inset-0 -z-10">
@@ -38,7 +38,7 @@ export default function Restaurant() {
           style={{ objectPosition: 'right center' }}
           priority
         />
-        <div className="absolute inset-0 bg-black/10"></div> {/* Overlay for better text visibility */}
+        <div className="absolute inset-0 bg-black/30"></div> {/* Overlay for better text visibility */}
       </div>
 
       {/* Animated Text */}

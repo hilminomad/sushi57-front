@@ -59,11 +59,8 @@ export const MobileSidebar = () => {
             <DottedButton label="Nous-contacter" />
             </a>
             <div className="flex text-center flex-col gap-2">
-              <p className="text-black font-medium">Suivez-nous sur les réseaux sociaux</p>
+              <p className="text-black font-medium">Suivez-nous sur Instagram </p>
               <div className="p-3 w-full flex justify-center items-center gap-4">
-                <a href="#">
-                  <Facebook className="h-8 w-8 text-black"/>
-                </a>
                 <a href="https://www.instagram.com/su57hii/">
                   <Instagram className="h-8 w-8 text-black"/>
                 </a>

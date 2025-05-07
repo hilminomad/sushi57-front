@@ -22,7 +22,7 @@ export function ContactPage({ id }: { id?: string })  {
           </a>
         </div>
         <div className="relative md:w-1/2 w-full min-h-96  ">
-        <a href="https://maps.app.goo.gl/bYnje6nNjYvyi8cK6" className='cursor-pointer'>
+        <a href="https://maps.app.goo.gl/bYnje6nNjYvyi8cK6" className='cursor-pointer rounded-2xl'>
             <Image src='/map.png' style={{ objectFit: 'cover',objectPosition: 'left top' }}
   quality={100}
   priority fill alt='map'></Image>
