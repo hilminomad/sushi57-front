@@ -1,8 +1,10 @@
 "use client"
 
+import DottedButton from '@/components/main-button';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Image from 'next/image';
 import { useRef } from 'react';
+
 
 export default function Restaurant() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -35,14 +37,14 @@ export default function Restaurant() {
           alt="Background"
           fill
           className="object-cover"
-          style={{ objectPosition: 'right center' }}
+          style={{ objectPosition: 'left center' }}
           priority
         />
         <div className="absolute inset-0 bg-black/30"></div> {/* Overlay for better text visibility */}
       </div>
 
       {/* Animated Text */}
-      <div className="h-full w-full flex items-center justify-center">
+      <div className="h-full w-full flex flex-col items-center justify-center">
         <motion.h1 
           className="md:text-8xl text-4xl font-bold text-white text-center"
           style={{
@@ -53,6 +55,9 @@ export default function Restaurant() {
         >
           Une Expérience Culinaire Asiatique Inoubliable
         </motion.h1>
+        <a href="/restaurant-khouribga" className='mt-8'>
+            <DottedButton label="Plus d'informations" />
+          </a>
       </div>
     </section>
   );
